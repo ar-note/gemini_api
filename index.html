@@ -64,7 +64,7 @@
 
       try {
         // Vercel Function の URL に合わせて書き換えてください
-        const response = await fetch('https://your-vercel-project.vercel.app/api', {
+        const response = await fetch('/api', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ prompt, api_key: apiKey })
